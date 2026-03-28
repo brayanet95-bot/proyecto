@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VECI GOL</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo-area">
+        <img src="/img/logo-removebg-preview.png">
+        <div>
+            <h1>VECI GOL</h1>
+            <span>La pasión que nos une</span>
+        </div>
+    </div>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="formulario.html">Reservas</a>
+        <a href="galeria.html">Galería</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="carrusel">
+    <img src="/img/fut1.jpeg">
+    <img src="/img/fut2.jpg">
+    <img src="/img/fut3.jpg|">
+</section>
+
+<section>
+    <h2>Bienvenido a VECI GOL ⚽</h2>
+    <p>Disfruta las mejores canchas, reserva fácil y vive el fútbol al máximo.</p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 VECI GOL</p>
+</footer>
+
+<script>
+let index = 0;
+const imgs = document.querySelectorAll(".carrusel img");
+
+function cambiar(){
+    imgs.forEach(i => i.style.display = "none");
+    index++;
+    if(index > imgs.length) index = 1;
+    imgs[index-1].style.display = "block";
+}
+
+setInterval(cambiar, 2000);
+</script>
+
+</body>
+</html>

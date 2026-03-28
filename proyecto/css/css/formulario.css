@@ -1,0 +1,45 @@
+**{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f766e;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+
+/* NAV */
+nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+nav a{
+    background:#1e40af;
+    padding:10px;
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+}
+
+/* PRODUCTOS */
+.producto-card{
+    margin:20px;
+    padding:20px;
+    background:#111827;
+    border-radius:10px;
+}
+
+/* CARRUSEL */
+.carrusel img{
+    width:300px;
+    display:none;
+}
+.carrusel img:first-child{
+    display:block;
+}

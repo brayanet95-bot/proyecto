@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/css/productos.css">
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="productos.html">Productos</a>
+<a href="formulario.html">Reservas</a>
+<a href="galeria.html">Galería</a>
+</nav>
+
+<main>
+
+<div class="producto-card">
+<img src="/img/fut1.jpeg">
+<h3>Cancha 1</h3>
+<p>$110.000</p>
+<button onclick="reservar('Cancha 1')">Reservar</button>
+</div>
+
+<div class="producto-card">
+<img src="/img/fut2.jpg">
+<h3>Cancha 2</h3>
+<button onclick="reservar('Cancha 2')">Reservar</button>
+</div>
+
+</main>
+
+<script>
+function reservar(c){
+    alert("Reservaste: " + c);
+    window.location.href = "formulario.html";
+}
+</script>
+
+</body>
+</html>

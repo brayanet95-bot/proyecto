@@ -1,0 +1,155 @@
+*/* RESET GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== FONDO GENERAL ===== */
+body{
+    background-color: #0f766e; /* verde principal */
+    color: #ffffff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* 🔥 LOGO COMO MARCA DE AGUA */
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("../img/logo-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 420px;
+    opacity: 0.06;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ===== HEADER ===== */
+/* ===== HEADER MODERNO ===== */
+
+.header{
+    background-color: #111827; /* negro azulado */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* LOGO + TEXTO */
+.logo-area{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area img{
+    width: 70px;
+}
+
+.logo-texto h1{
+    font-size: 1.8rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+.logo-texto span{
+    font-size: 0.9rem;
+    color: #f97316;
+}
+
+/* ===== MENU ===== */
+
+.menu{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+/* HOVER 🔥 */
+.menu a:hover{
+    background-color: #1e40af;
+    transform: translateY(-2px);
+}
+
+/* ===== SECCIÓN PRINCIPAL ===== */
+main{
+    text-align: center;
+    padding: 50px 20px;
+}
+
+main p{
+    font-size: 22px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+/* ===== FOOTER ===== */
+
+footer{
+    background-color: #111827; /* negro azulado */
+    color: #ffffff;
+    margin-top: 60px;
+}
+
+/* CONTENIDO PRINCIPAL */
+.footer-contenido{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+/* COLUMNAS */
+.footer-col{
+    max-width: 300px;
+}
+
+.footer-col h3,
+.footer-col h4{
+    margin-bottom: 15px;
+    color: #f97316; /* naranja deportivo */
+}
+
+.footer-col p{
+    margin: 6px 0;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* COPYRIGHT */
+.footer-copy{
+    text-align: center;
+    padding: 15px;
+    background-color: #030712;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* RESPONSIVE 📱 */
+@media (max-width: 768px){
+    .footer-contenido{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
